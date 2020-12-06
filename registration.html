@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Race registration</h1>
+    <form action="/race">
+        <p>
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname" required placeholder="enter name">
+        </p>
+        <p>
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" required placeholder="enter surname">
+        </p>
+        <div>
+            <h3>Select a race:</h3>
+            <input type="radio" name="run" id="fivek">
+            <label for="fivek">5 km</label><br>
+            <input type="radio" name="run" id="twentyone">
+            <label for="twentyone">21 km</label><br>
+            <input type="radio" name="run" id="fourty">
+            <label for="fourty">42 km</label>
+        </div>
+        <br>
+        <div>
+            <p>
+                <label for="email" class="naziv">enter email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="password" class="naziv">enter password</label>
+                <input type="password" name="password" id="password" required minlength="6">
+            </p>
+            <p>
+                <label for="division">select age group</label>
+                <select name="age" id="division">
+                    <option value="10-20">10-20</option>
+                    <option value="20-40">20-40</option>
+                    <option value="40-60">40-60</option>
+                </select>
+
+            </p>
+        </div>
+        <button>Register!</button>
+    </form>
+
+    <h2>iva</h2>
+    <h3>juric</h3>
+    <button>botun</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur iusto qui enim, asperiores doloribus totam.
+        Ea quam molestias vel ex perferendis rerum, repellendus sed sit deserunt odit voluptate error sequi!</p>
+</body>
+
+</html>

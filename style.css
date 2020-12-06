@@ -1,0 +1,53 @@
+h1 {
+  color: red;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: underline;
+  letter-spacing: 5px;
+  font-family: Arial;
+}
+button {
+  color: #ff00ff;
+  background-color: beige;
+}
+p {
+  color: rgb(44, 43, 111);
+  text-align: center;
+  /* line-height: 2; */
+}
+h2 {
+  text-decoration: blue line-through wavy 2px;
+}
+#password {
+  background-color: yellowgreen;
+}
+.naziv {
+  background-color: blueviolet;
+  font-size: larger;
+}
+
+input[type="password"] {
+  color: red;
+}
+button:hover {
+  color: orange;
+  background-color: black;
+}
+button:active {
+  background-color: green;
+}
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px pink;
+}
+/* .post:nth-of-type(2n) {
+  background-color: green;
+} svako drugi bojamo */
+h2::first-letter {
+  font-size: 40px;
+}
+p::first-line {
+  color: red;
+}
+p::selection {
+  background-color: grey;
+}
