@@ -1,0 +1,61 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex;
+  /* flex-direction: row; default */
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* align-content: flex-end; */
+}
+#container div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  flex-basis: 200px;
+}
+/*
+-------širi se po cijelom div ako ima mista i odredujemo omjer sirenja
+div:nth-of-type(1) {
+  flex-grow: 1;
+}
+div:nth-of-type(5) {
+  flex-grow: 1;
+} */
+/* div:nth-of-type(3) {
+  align-self: center;
+}
+div:nth-of-type(2) {
+  align-self: flex-end;
+} */
+/* 
+-------ako nema mista
+div:nth-of-type(1) {
+  flex-shrink: 1;
+} */
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  height: 400px;
+  display: flex;
+}
+main .sidebar {
+  background-color: purple;
+
+  flex: 1 2 200px;
+}
+main .maincontent {
+  background-color: greenyellow;
+  flex: 2 1 500px;
+}
