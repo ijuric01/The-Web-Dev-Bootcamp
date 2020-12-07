@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>registration</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Race registration</h1>
     <form action="/race">
+      <p>
+        <label for="firstname">First name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          required
+          placeholder="enter name"
+        />
+      </p>
+      <p>
+        <label for="lastname">Last name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          required
+          placeholder="enter surname"
+        />
+      </p>
+      <div>
+        <h3>Select a race:</h3>
+        <input type="radio" name="run" id="fivek" />
+        <label for="fivek">5 km</label><br />
+        <input type="radio" name="run" id="twentyone" />
+        <label for="twentyone">21 km</label><br />
+        <input type="radio" name="run" id="fourty" />
+        <label for="fourty">42 km</label>
+      </div>
+      <br />
+      <div>
         <p>
-            <label for="firstname">First name</label>
-            <input type="text" name="firstname" id="firstname" required placeholder="enter name" />
+          <label for="email" class="naziv">enter email</label>
+          <input type="email" name="email" id="email" required />
         </p>
         <p>
-            <label for="lastname">Last name</label>
-            <input type="text" name="lastname" id="lastname" required placeholder="enter surname" />
+          <label for="password" class="naziv">enter password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="6"
+          />
         </p>
-        <div>
-            <h3>Select a race:</h3>
-            <input type="radio" name="run" id="fivek" />
-            <label for="fivek">5 km</label><br />
-            <input type="radio" name="run" id="twentyone" />
-            <label for="twentyone">21 km</label><br />
-            <input type="radio" name="run" id="fourty" />
-            <label for="fourty">42 km</label>
-        </div>
-        <br />
-        <div>
-            <p>
-                <label for="email" class="naziv">enter email</label>
-                <input type="email" name="email" id="email" required />
-            </p>
-            <p>
-                <label for="password" class="naziv">enter password</label>
-                <input type="password" name="password" id="password" required minlength="6" />
-            </p>
-            <p>
-                <label for="division">select age group</label>
-                <select name="age" id="division">
-                    <option value="10-20">10-20</option>
-                    <option value="20-40">20-40</option>
-                    <option value="40-60">40-60</option>
-                </select>
-            </p>
-        </div>
-        <button>Register!</button>
+        <p>
+          <label for="division">select age group</label>
+          <select name="age" id="division">
+            <option value="10-20">10-20</option>
+            <option value="20-40">20-40</option>
+            <option value="40-60">40-60</option>
+          </select>
+        </p>
+      </div>
+      <button>Register!</button>
     </form>
 
     <h2>iva</h2>
     <h3>juric</h3>
     <button>botun</button>
     <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
-        iusto qui enim, asperiores doloribus totam. Ea quam molestias vel ex
-        perferendis rerum, repellendus sed sit deserunt odit voluptate error
-        sequi!
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+      iusto qui enim, asperiores doloribus totam. Ea quam molestias vel ex
+      perferendis rerum, repellendus sed sit deserunt odit voluptate error
+      sequi!
     </p>
     <div class="dog">
-        <img src="dog2.jpg" alt="dog">
-        <p>I am dog</p>
+      <img src="pictures/dog2.jpg" alt="dog" />
+      <p>I am dog</p>
     </div>
 
     <h3>contact</h3>
     <span>099220293</span>
     <span>646467384</span>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloremque odio adipisci, voluptatibus est a
-        ipsam harum atque illum temporibus illo repellendus commodi assumenda molestiae quaerat earum cupiditate quidem!
-        Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam id quae labore est suscipit
-        ducimus optio, <span>IVA</span> excepturi ut dolores, nostrum repellat accusantium tempore magni iure illo
-        itaque hic ullam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint totam nulla, necessitatibus quia voluptatibus
-        quas porro vitae accusamus corporis error veritatis beatae doloribus tempora molestiae voluptate obcaecati
-        ratione atque enim.</p>
-</body>
-
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloremque
+      odio adipisci, voluptatibus est a ipsam harum atque illum temporibus illo
+      repellendus commodi assumenda molestiae quaerat earum cupiditate quidem!
+      Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+      ipsam id quae labore est suscipit ducimus optio,
+      <span>IVA</span> excepturi ut dolores, nostrum repellat accusantium
+      tempore magni iure illo itaque hic ullam? Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Sint totam nulla, necessitatibus quia
+      voluptatibus quas porro vitae accusamus corporis error veritatis beatae
+      doloribus tempora molestiae voluptate obcaecati ratione atque enim.
+    </p>
+  </body>
 </html>
