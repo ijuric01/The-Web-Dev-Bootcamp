@@ -165,37 +165,169 @@
 
  //TODO APP
 
- let input=prompt("what would u like to do");
- const todos=["collect eggs", "cleaning box"];
+//  let input=prompt("what would u like to do");
+//  const todos=["collect eggs", "cleaning box"];
 
- while(input!=="quit" && input!=="q"){
+//  while(input!=="quit" && input!=="q"){
 
-    if(input==="list")
-    {
-        console.log("------")
-        for(let i=0; i<todos.length; i++)
-        {
-            console.log(`${i}: ${todos[i]}`);
-        }
-        console.log("------")
+//     if(input==="list")
+//     {
+//         console.log("------")
+//         for(let i=0; i<todos.length; i++)
+//         {
+//             console.log(`${i}: ${todos[i]}`);
+//         }
+//         console.log("------")
 
-    }
-    else if(input==="new"){
-        const newtodo=prompt("ok, what is new to do?");
-        todos.push(newtodo);
-        console.log(`${newtodo} is added to list`);
-    }
-    else if(input==="delete"){
-        const index=parseInt(prompt("ok, enter an index to delete:"));
-        if(!Number.isNaN(index)){
-            const deleted=todos.splice(index, 1);
-            console.log(`ok, deleted stuff is: ${deleted[0]}`); //jer je deleted array
-        }
-        else{
-            console.log("unknown index!")
-        }
-    }
-    input=prompt("what would u like to do?");
+//     }
+//     else if(input==="new"){
+//         const newtodo=prompt("ok, what is new to do?");
+//         todos.push(newtodo);
+//         console.log(`${newtodo} is added to list`);
+//     }
+//     else if(input==="delete"){
+//         const index=parseInt(prompt("ok, enter an index to delete:"));
+//         if(!Number.isNaN(index)){
+//             const deleted=todos.splice(index, 1);
+//             console.log(`ok, deleted stuff is: ${deleted[0]}`); //jer je deleted array
+//         }
+//         else{
+//             console.log("unknown index!")
+//         }
+//     }
+//     input=prompt("what would u like to do?");
 
- }
- console.log("ok, quit the app")
+//  }
+//  console.log("ok, quit the app")
+
+//functions!!!
+
+// let die1=Math.floor(Math.random()*6)+1;
+
+// let die1=rollDie(6);
+// let die2=rollDie(12);
+// let die3=rollDie(24);
+
+// function sing(){
+//     console.log("leave me alone")
+// }
+
+// function greet(firstname, lastname){
+//     console.log(`hi, ${firstname}, ${lastname[0]}. `)
+// }
+// // function rant(message) {
+// //     console.log(message.toUpperCase());
+// //     console.log(message.toUpperCase());
+// //     console.log(message.toUpperCase());
+// // }
+
+// function repeat(post, num){
+//     for(let i=0; i<num; i++){
+//         console.log(post);
+//     }
+// }
+// function isSnakeEyes(first, second){
+// if(first===1 && second===1){
+//     console.log("snake eyes")
+// }
+// else{
+//     console.log("not snake eyes")
+// }
+// }
+// function add(x,y){
+//     if(typeof x!=="number" && typeof y!=="number")
+//     return false;
+    
+//     let sum=x+y;
+//     return sum;
+// }
+
+// function capitalize(str){
+//     return str[0].toUpperCase()+str.slice(1); 
+// }
+// function returnDay(num){
+//     let days=["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+//     return days[num-1];
+// }
+// function isShortsWeather(temp){
+//     if(temp>75)
+//     return true;
+//     else return false;
+// }
+// function lastElement(arr){
+//     if(!arr.length) return null;
+//     return arr[arr.length-1];
+// }
+// function sumArray(nums){
+//    let total=0;
+
+//    for(let num of nums){
+//        total+=num;
+//    }
+//    return total;
+// }
+
+//FUNCTION EXPRESSION
+// const add=function (x,y){
+//     return x+y;
+// }
+ 
+//prosljeđivanje funkcije kao argument
+// function callTwice(func){
+//     func();
+//     func();
+// }
+// function rollDie(){
+//     const roll=Math.floor(Math.random()*6)+1
+//     console.log(roll)
+// }
+// callTwice(rollDie)
+
+//FUNCTION FACTORY
+
+// function makeBeetwenFunc(min, max){
+//     return function(num){
+//         return num >=min && num<=max;
+//     }
+// }
+
+//DEFINING METHODS
+// const myMath={
+//     PI:3.14,
+//     square: function(num){
+//         return num*num;
+//     },
+//     cube(num){    //skraćeni način
+//         return num**3
+//     }
+// }
+
+// const square={
+//     area(side){
+//         return side**2;
+//     },
+//     perimeter(side){
+//         return side * 4;
+//     }
+// }
+
+//THIS!!! pristupamo elementima iz objekta unutar metode
+//this pristupa prozoru prije, vraća se unazad na prethodne vrijednosti
+// const cat={
+//     name:"blue steele",
+//     color:"grey",
+//     breed:"scottish",
+//     meow(){
+//         console.log(this.color);
+
+//     }
+// }
+// const hen={
+//     name:"helen",
+//     eggCount:0,
+//     layAnEgg(){
+//         console.log("EGG");
+//         this.eggCount++;
+//     }
+// }
