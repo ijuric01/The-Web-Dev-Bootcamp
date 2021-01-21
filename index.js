@@ -331,3 +331,156 @@
 //         this.eggCount++;
 //     }
 // }
+//U SLUCAJU GRESKE POKUSAJ NESTO DRUGO:
+// try{
+//     hello.toUpperCase();
+// } catch{
+//     console.log("errrrorrrrr!!!")
+// }
+const numbers=[1,2,3,4,5,6,7,8,9];
+
+numbers.filter(n=>{
+    return n<8;
+})
+
+// function print(element){
+//     console.log(element)
+// }
+
+// numbers.forEach(print)
+
+// numbers.forEach(function(el) {
+//     if(el%2==0)
+//     console.log(el)
+// })
+
+const movies = [
+    {
+        title:"amadeus",
+        score:99,
+        year:2005
+    },
+    {
+        title:"stand by me",
+        score:20,
+        year:2000
+    },
+     {
+         title:"anna",
+         score:49,
+         year:1998
+     },
+     {
+         title:"unce upon a time",
+         score:88,
+         year:1888
+     }
+]
+const goodmovie= movies.filter(movie =>{
+    return movie.score>80
+})
+const badmovie= movies.filter(movie =>movie.score<60)
+
+// movies.forEach(function(movie){
+//     console.log(`${movie.title} - ${movie.score}/100`)
+// })
+const goodTitles = goodmovie.map( m => m.title)
+
+//moze i ovako
+movies.filter(m=>m.score>80).map(m=>m.title)
+
+const doubles=numbers.map(function(num){
+    return num*2;
+})
+
+const titles=movies.map(function(mov){
+    return mov.title.toUpperCase();
+})
+
+const add = (x,y) => {
+    return x+y;
+}
+
+const sq=(x)=>{
+    return x*x;
+}
+const rollDie = () =>{
+    return Math.floor(Math.random()*6)+1
+}
+
+const greet = (str) =>{
+    return console.log(`hej ${str}`)
+}
+//druga sintaksa 
+// const rollDie = () =>(
+//      Math.floor(Math.random()*6)+1
+// )
+// const addd=(a,b)=> a+b
+
+// const newMovies=movies.map(movie =>(
+//      console.log(`${movie.title} - ${movie.score/10}`)
+// ))
+
+//set Timeout, interval, clearInterval!
+
+// setTimeout(()=>{
+//     console.log("hellloooo")
+// }, 3000)
+
+// const id=setInterval(()=>{
+//     console.log(Math.random())
+// }, 2000);
+
+ const validUserNames = usernames => usernames.filter(usr => usr.length < 10);
+ const exams=[10,30,55,88,38,89,100,99,33];
+
+ exams.every(score =>score >=75)
+ exams.some(score => score >=76)
+
+ movies.some(movie => movie.year >2000)
+
+ //Define a function called allEvens that accepts a single array of numbers.  If the array contains all even numbers, return true.  Otherwise, return false.
+
+ function allEvens(arr) {
+    return arr.every(n => n % 2 === 0);
+}
+
+const prices=[9.50,9.99,3.33,19.99];
+
+const total=prices.reduce((total, el)=>{
+    return total+el;
+})
+//const total=prices.reduce((total, el)=> total+price)
+
+const min= prices.reduce((minimum, price)=>{
+    if(price<minimum){
+        return price;
+    }
+    return minimum;
+})
+
+const highestRated=movies.reduce((highest, current)=>{
+    if(current.score>highest.score){
+        return current;
+    }
+    return highest;
+})
+
+const even=[2,4,6,8];
+//drugi argument je inicijalni argument za prvi
+
+even.reduce((sum, num)=> sum+num, 100)
+
+const person={
+    firstName:"iva",
+    lastName:"juric",
+    fullName:function(){
+        return `${this.firstName} ${this.lastName}`
+    },
+    shoutName: function () {
+        setTimeout(() => {
+            console.log(this.fullName())
+        }, 3000)
+    }
+
+}
