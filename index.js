@@ -484,3 +484,78 @@ const person={
     }
 
 }
+
+//default params
+
+// function rollDie(num =6){
+//     return Math.floor(Math.random()*num)+1
+// }
+// function greet(msg ="hej", msg2){
+//     console.log(`${msg}, ${msg2}`)
+// }
+
+// spread
+//treba nam za izdvajanje broja iz arraya
+// broj=[1,4,2,7,88,6754,2334,11,23]
+// Math.max(...broj);
+// console.log(..."heello")
+
+// const cats=["anny", "rex", "lejla"];
+// const dogs=["mick", "hatchi", "leo"];
+
+//const allPets=[...cats, ...dogs]; //copy and merge
+
+//const feline={legs:4, family:"fel"};
+//const anima={legs:2, family:"ani"};
+
+//REST!!!!
+//za vise parametara, dakle sve vrijednosti koje posaljemo
+// function sum(...nums){
+//     console.log(nums)
+// }
+// function raceResults(gold, silver, ...everyoneElse){
+//     console.log(`gold goes to ${gold}`)
+//     console.log(`silver goes to ${silver}`)
+//     console.log(`rest thank you ${everyoneElse}`)
+
+// }
+
+//destrukturiranje...
+// const scores=[3289,82473,4387,2874,2378,1928];
+
+// // const highScore=scores[0];
+// // const secondScore=scores[1];
+
+// //ILI
+
+// const [gold, silver, bronze, ...elsep]=scores;
+
+const user={
+    email:"oash@sdjh.com",
+    pass:"djsdsj",
+    firstName:"ana",
+    lastName:"didi",
+    born:1999,
+    died:2020
+}
+
+// const user2={
+//     email:"edff@sdjh.com",
+//     pass:"ffffff",
+//     firstName:"maria",
+//     lastName:"vf",
+//     born:1949,
+   
+// }
+
+//ekstrahirali smo ih iz objekta
+// const{email, pass}=user;
+
+// const{born: birthYear}=user;
+
+// const {email, pass, died="n/a"}=user2;
+
+function fullName(user){
+    return `${user.firstName} ${user.lastName}`
+}
+
